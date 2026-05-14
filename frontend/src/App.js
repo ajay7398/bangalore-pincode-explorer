@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 import InfoPanel from './components/InfoPanel';
 import Sidebar from './components/Sidebar';
 
-const API = 'http://localhost:8000';
+const API = process.env.REACT_APP_API_URL;
 
 export default function App() {
   const [areas, setAreas] = useState([]);
